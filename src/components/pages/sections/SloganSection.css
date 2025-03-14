@@ -1,0 +1,33 @@
+.lema {
+    background-image: url(/public/images/promotion.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.frase {
+    text-align: center;
+    color: #fff;
+    font-size: 90px;
+    font-style: italic;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+@media screen and (min-width:400px) and (max-width: 960px) {
+    .lema {
+        background-image: url(/public/images/promotion.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .frase {
+        text-align: center;
+        color: #fff;
+        font-size: 90px;
+        font-style: italic;
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+}

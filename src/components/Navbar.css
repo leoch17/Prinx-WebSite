@@ -1,0 +1,240 @@
+/* .navbar {
+    background: #5CC600 !important;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+} */
+
+.navbar {
+    background-color: #5CC600;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    max-width: 1800px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.navbar-logo {
+    padding-left: 20%;
+    cursor: pointer;
+    align-items: center;
+    font-style: oblique;
+    width: 50% !important;
+    height: 70% !important;
+}
+
+.navbar-logo-second {
+    justify-self: end;
+    cursor: pointer;
+    align-items: center;
+    font-style: oblique;
+    width: 55% !important;
+    height: 100% !important;
+}
+
+
+.dropdown {
+    padding-top: 23%;
+}
+
+.fa-typo3 {
+    margin-left: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 60vw;
+    justify-content: end;
+    margin-right: 5%;
+    padding-top: 20px;
+}
+
+.nav-item {
+    height: 80px;
+    font-size: 20px;
+}
+
+.nav-links {
+    color: #fff !important;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+}
+
+/* .nav-links:hover {
+      border-bottom: 5px solid #000000;
+      transition: all 0.3s ease-in-out;
+      color: #000;
+    } */
+
+
+nav.fill ul li a {
+    transition: all 2s;
+}
+
+nav.fill ul li a:after {
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
+}
+
+nav.fill ul li a:hover {
+    color: #fff;
+    z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+    z-index: -10;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links-mobile {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.icon-social {
+    color: #c6c8ca;
+    font-size: 35px;
+    text-align: center;
+    flex-direction: row !important;
+}
+
+.icon-social:hover {
+    color: #D71820;
+    font-size: 38px;
+}
+
+.divisor-navbar {
+    border: 3px solid #E60012 !important;
+    opacity: 10 !important;
+    margin-top: -1px !important;
+    margin-bottom: -1px !important;
+}
+
+@media screen and (min-width: 400px) and (max-width: 960px) {
+    .NavbarItems {
+        position: relative;
+    }
+
+    .navbar-container {
+        max-width: 500px;
+    }
+
+    .navbar-logo {
+        cursor: pointer;
+        text-decoration: none;
+        align-items: center;
+        font-style: oblique;
+        width: 250% !important;
+        height: 70% !important;
+        margin-left: -20%;
+    }
+
+    .navbar-logo-second {
+        justify-self: end;
+        cursor: pointer;
+        text-decoration: none;
+        align-items: center;
+        font-style: oblique;
+        width: 80% !important;
+        height: 100% !important;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        opacity: 1;
+        justify-content: start;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: #000;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .dropdown {
+        padding-top: 3%;
+    }
+
+    .cauchos-nav {
+        width: auto !important;
+        height: 100% !important;
+        top: 0;
+        left: 5px !important;
+        justify-content: flex-start !important;
+
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 60%);
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .fa-times {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .nav-links-mobile {
+        display: block;
+        text-align: center;
+        margin: 2rem auto;
+        border-radius: 4px;
+        width: 80%;
+        text-decoration: none;
+        font-size: 1.5rem;
+        background-color: transparent;
+        color: #000;
+        padding: 14px 20px;
+        border: 1px solid #fff;
+        transition: all 0.3s ease-out;
+    }
+}

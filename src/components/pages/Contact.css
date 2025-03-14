@@ -1,0 +1,118 @@
+.contacto-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url(/public/images/contact.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.enlaces {
+    text-decoration: none !important;
+}
+
+@media (min-width: 400px) and (max-width: 992px) {
+    .contacto-principal {
+        padding: 20px;
+    }
+}
+
+.box {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box__item {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #333333;
+    width: 190px;
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: -5px 5px 50px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.box__item:hover {
+    box-shadow: -10px 10px 100px rgba(0, 0, 0, 0.5);
+    transform: scale(1.1);
+}
+
+@media (min-width:400px) and (max-width: 992px) {
+    .box__item {
+        margin-bottom: 50px;
+    }
+}
+
+.box__item .icono {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.box__item span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.box__item--vue {
+    color: #5CC600;
+}
+
+.box__item--vue:hover {
+    background: #5CC600;
+    color: #fff;
+}
+
+.box__item--vue:hover~.box__bg {
+    top: 10% !important;
+    opacity: 1;
+    background: #4ac08e;
+}
+
+.box__item--react {
+    color: #5CC600;
+}
+
+.box__item--react:hover {
+    background: #5CC600;
+    color: #fff;
+}
+
+.box__item--react:hover~.box__bg {
+    opacity: 1;
+    background: #61dafb;
+}
+
+.box__item--angular {
+    color: #5CC600;
+}
+
+.box__item--angular:hover {
+    background: #5CC600;
+    color: #fff;
+}
+
+.box__item--angular:hover~.box__bg {
+    opacity: 1;
+    background: #dd0031;
+}
+
+.box__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s;
+}
